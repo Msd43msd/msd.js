@@ -6,6 +6,5 @@ Asena.addCommand({pattern: 'msd', fromMe: true, onlyPm: false}, (async (message,
 await message.sendMessage('Bu bir testtir!');
 await new Promise(r => setTimeout(r, 1000));
 
-await message.sendMessage('Test Bitti!');
 
 }));
