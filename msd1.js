@@ -1,4 +1,4 @@
-const Asena = require('../events');
+İnstagram const Asena = require('../events');
 const{MessageType} = require('@adiwajshing/baileys');
 
 Asena.addCommand({pattern: 'msd', fromMe: true}, (async (message, match) => {
