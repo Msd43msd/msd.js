@@ -3,8 +3,17 @@ const{MessageType} = require('@adiwajshing/baileys');
 
 Asena.addCommand({pattern: 'msd', fromMe: true, onlyPm: false}, (async (message, match) => {
 
-await message.sendMessage('Bu bir testtir!');
-await new Promise(r => setTimeout(r, 1000));
+if (match[1] === "bir") {
+    awaitmessage.sendMessage('test bir yazarsınız bu mesajı verir');
+
+
+} else if (match[1] === "iki") {
+    awaitmessage.sendMessage('test iki yazarsınız bu mesajı verir');
+
+
+} else {
+    await message.sendMessage('Yukardaki parametreler girilmezse bu mesaj gelecektir');
+}
 
 
 }));
